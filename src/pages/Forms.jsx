@@ -27,6 +27,9 @@ const Div = styled.div`
 
     text-decoration: none;
   }
+
+  @media only screen and (max-width: 1000px) {
+  }
 `;
 
 const Forms = () => {

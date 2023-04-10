@@ -5,12 +5,14 @@ import { ImHammer2 } from "react-icons/im";
 import SahakariSanstha from "../components/Links/SahakariSanstha";
 import Suchana from "../components/Links/Suchana";
 import UpayogiSamagri from "../components/Links/UpayogiSamagri";
+import { Link } from "react-router-dom";
 
 const Div = styled.div`
   .heading {
     font-size: 16px;
     font-weight: 600;
   }
+
   hr {
     color: red;
     width: 30%;

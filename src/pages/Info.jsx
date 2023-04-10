@@ -1,17 +1,10 @@
 import React from "react";
 import { FaBook } from "react-icons/fa";
 import styled from "styled-components";
+import Button from "../components/layouts/Button";
+import { Link } from "react-router-dom";
 
 const Div = styled.div`
-  .btn {
-    color: white;
-    margin-top: 5px;
-    align-items: baseline;
-    background: #0064a2;
-    padding: 4px;
-    border-radius: 4px;
-  }
-
   .heading {
     border: 0px;
     font-size: 16px;
@@ -53,7 +46,9 @@ const Info = () => {
         सङ्घसंस्थाहरू सहित आन्दोलन क्रमशः शोषणविहीन आर्थिक सम्बन्धहरू प्रवर्धन
         गर्ने शक्तिको रूपमा विकसित भइरहेको छ ।
       </p>
-      <button className="btn">थप पढ्नु होस्</button>
+      <Link to="http://deoc.gov.np/content/261/2017/36491157/">
+        <Button />
+      </Link>
     </Div>
   );
 };

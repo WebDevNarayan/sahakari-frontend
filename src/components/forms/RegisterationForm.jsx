@@ -17,7 +17,7 @@ const RegisterationForm = () => {
             placeholder="company address"
             withAsterisk
           />
-          <TextInput label="PAN No." placeholder="pan number" withAsterisk />
+          {/* <TextInput label="PAN No." placeholder="pan number" withAsterisk /> */}
           <NumberInput label="PAN No." placeholder="pan number" withAsterisk />
           <div>
             <FileInput

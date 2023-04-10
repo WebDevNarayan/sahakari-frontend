@@ -11,6 +11,7 @@ const StyledDiv = styled.div`
   .logo {
     margin-left: 15px;
   }
+
   h3 {
     text-align: center;
   }

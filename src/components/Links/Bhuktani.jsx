@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import nepal_logo from "../imgs/nepal_logo.png";
+import { Link } from "react-router-dom";
+import Button from "../layouts/Button";
 
 const Div = styled.div`
   border: 1px solid #c7c7c7;
@@ -35,6 +36,9 @@ const Bhuktani = () => {
           </h5>
         </div>
       </div>
+      <Link to="http://deoc.gov.np/notice-board/5/2017/12432432">
+        <Button />
+      </Link>
     </Div>
   );
 };

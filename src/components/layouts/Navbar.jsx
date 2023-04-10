@@ -45,6 +45,13 @@ const Nav = styled.nav`
   ul li:hover ul.dropdown {
     display: block;
   }
+
+  @media only screen and (max-width: 850px) {
+    /*Big smartphones [426px -> 600px]*/
+    .menu-link {
+      display: none;
+    }
+  }
 `;
 const Navbar = () => {
   return (
@@ -55,7 +62,7 @@ const Navbar = () => {
             <FaHome />
           </a>
         </li>
-        <li>
+        <li className="menu-link">
           <a href="">
             हाम्रो बारेमा <IoMdArrowDropdown />
           </a>
@@ -89,12 +96,12 @@ const Navbar = () => {
             </li>
           </ul>
         </li>
-        <li>
+        <li className="menu-link">
           <a href="https://deoc.gov.np/content/259/2017/55536387/">
             हाम्रो विचार
           </a>
         </li>
-        <li>
+        <li className="menu-link">
           <a href="">
             सहकारी कानूनहरू <IoMdArrowDropdown />
           </a>
@@ -111,7 +118,7 @@ const Navbar = () => {
             </li>
           </ul>
         </li>
-        <li>
+        <li className="menu-link">
           <a href="">
             प्रदेशको स्रोत <IoMdArrowDropdown />
           </a>
@@ -139,7 +146,7 @@ const Navbar = () => {
             </li>
           </ul>
         </li>
-        <li>
+        <li className="menu-link">
           <a href="">
             प्रकाशनहरू <IoMdArrowDropdown />
           </a>
@@ -155,7 +162,7 @@ const Navbar = () => {
             </li>
           </ul>
         </li>
-        <li>
+        <li className="menu-link">
           <a href="">
             समाचार <IoMdArrowDropdown />
           </a>
@@ -177,7 +184,7 @@ const Navbar = () => {
             </li>
           </ul>
         </li>
-        <li>
+        <li className="menu-link">
           <a href="">
             तस्वीर तथा भिडियो ग्यालरी <IoMdArrowDropdown />
           </a>

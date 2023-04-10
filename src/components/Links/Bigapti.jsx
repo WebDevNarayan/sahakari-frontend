@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import nepal_logo from "../imgs/nepal_logo.png";
+import Button from "../layouts/Button";
+import { Link } from "react-router-dom";
 
 const Div = styled.div`
   border: 1px solid #c7c7c7;
@@ -50,6 +52,9 @@ const Bigapti = () => {
           </h5>
         </div>
       </div>
+      <Link to="http://deoc.gov.np/notice-board/4/2017/83523699">
+        <Button />
+      </Link>
     </Div>
   );
 };

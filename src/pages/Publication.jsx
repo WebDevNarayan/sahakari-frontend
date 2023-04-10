@@ -3,17 +3,15 @@ import React from "react";
 import { FaDownload } from "react-icons/fa";
 import styled from "styled-components";
 import RightToNews from "../components/Links/RightToNews";
-import SahakariSanstha from "../components/Links/SahakariSanstha";
 import Samagri from "../components/Links/Samagri";
-import Suchana from "../components/Links/Suchana";
 import Tathyanka from "../components/Links/Tathyanka";
-import UpayogiSamagri from "../components/Links/UpayogiSamagri";
 
 const Div = styled.div`
   .heading {
     font-size: 16px;
     font-weight: 600;
   }
+
   hr {
     color: red;
     width: 18%;

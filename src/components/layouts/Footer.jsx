@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Div = styled.div`
-  background: #787878;
+  background: #3d3955;
   text-align: center;
   height: 7vh;
   p {

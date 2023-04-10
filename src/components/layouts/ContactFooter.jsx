@@ -6,14 +6,18 @@ const Div = styled.div`
   display: flex;
   justify-content: space-between;
   background: #0064a2;
-  height: 60vh;
+  height: 100%;
 
   div {
     margin-top: 1rem;
     padding: 0px 10px;
     border-radius: 5px;
-    height: 50vh;
     width: 100%;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 const ContactFooter = () => {

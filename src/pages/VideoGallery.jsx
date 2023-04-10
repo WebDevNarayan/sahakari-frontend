@@ -1,18 +1,35 @@
 import { AspectRatio } from "@mantine/core";
 import React from "react";
 import { FaVideo } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Button from "../components/layouts/Button";
 
 const Div = styled.div`
   .heading {
     font-size: 16px;
     font-weight: 600;
   }
+  .btn {
+    color: white;
+    margin-top: 5px;
+    align-items: baseline;
+    background: #0064a2;
+    padding: 4px;
+    border-radius: 4px;
+    float: right;
+  }
   hr {
     background-color: red;
-    width: 30%;
+    width: 10vw;
     border: 2px solid red;
     margin-bottom: 5px;
+  }
+
+  @media only screen and (max-width: 850px) {
+    hr {
+      width: 100vw;
+    }
   }
 `;
 const VideoGallery = () => {
@@ -38,6 +55,10 @@ const VideoGallery = () => {
           allowfullscreen
         ></iframe>
       </AspectRatio>
+      <Link to="http://deoc.gov.np/video-gallery">
+        {" "}
+        <Button />
+      </Link>
     </Div>
   );
 };

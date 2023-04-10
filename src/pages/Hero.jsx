@@ -18,23 +18,60 @@ const Div = styled.div`
     "gallery gallery";
 
   .carousel {
+    width: 70vw;
     grid-area: carousel;
     /* width: 140vh; */
   }
   .forms {
-    width: 50vh;
+    width: 25vw;
     grid-area: forms;
     border: 1px solid black;
+    margin-right: 0px;
   }
+
   .info {
+    width: 70vw;
     grid-area: info;
   }
   .four {
+    width: 70vw;
     grid-area: four;
   }
   .gallery {
+    width: 98vw;
     padding: 1rem;
     grid-area: gallery;
+  }
+
+  @media only screen and (max-width: 850px) {
+    /*Big smartphones [426px -> 600px]*/
+    width: full;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 5px;
+    grid-template-areas:
+      "carousel"
+      "info"
+      "four"
+      "forms"
+      "gallery";
+
+    .forms {
+      width: 100vw;
+      grid-area: forms;
+    }
+    .info {
+      width: 100vw;
+      grid-area: info;
+    }
+    .four {
+      width: 100vw;
+      grid-area: four;
+    }
+    .gallery {
+      width: 100vw;
+      grid-area: gallery;
+    }
   }
 `;
 

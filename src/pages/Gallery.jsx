@@ -7,7 +7,6 @@ const Div = styled.div`
     border: 1px solid #bdbdbd;
     justify-content: space-evenly;
     display: flex;
-    width: 100%;
   }
   div {
     gap: 5px;
@@ -26,6 +25,19 @@ const Div = styled.div`
     width: 12%;
     border: 2px solid red;
     margin-bottom: 5px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+    padding: 5px;
+    height: 40vh;
+    width:100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
   }
 `;
 

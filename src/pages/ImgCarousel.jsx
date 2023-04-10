@@ -1,8 +1,16 @@
 import { Carousel } from "@mantine/carousel";
 import { createStyles, getStylesRef } from "@mantine/core";
 import React from "react";
-import NewsScroller from "./NewsScroller";
+// import NewsScroller from "./NewsScroller";
+import styled from "styled-components";
 
+const Div = styled.div`
+  width: 100%;
+
+  @media only screen and (max-width: 1000px) {
+    min-width: 100vw;
+  }
+`;
 const useStyles = createStyles(() => ({
   controls: {
     ref: getStylesRef("controls"),
@@ -21,7 +29,7 @@ const useStyles = createStyles(() => ({
 const ImgCarousel = () => {
   const { classes } = useStyles();
   return (
-    <>
+    <Div>
       <p>
         <a href="" style={{ color: "red", padding: "5px", margin: "5px" }}>
           पुराना साझा (सहकारी) संघ/संस्थामा रेको ऋण तथा रोक्का जग्गाको विवरण
@@ -29,7 +37,7 @@ const ImgCarousel = () => {
         </a>
       </p>
       <Carousel
-        maw={900}
+        maw="full"
         mx="auto"
         withIndicators
         height={400}
@@ -64,7 +72,7 @@ const ImgCarousel = () => {
         {/* ...other slides */}
       </Carousel>
       {/* <NewsScroller /> */}
-    </>
+    </Div>
   );
 };
 
